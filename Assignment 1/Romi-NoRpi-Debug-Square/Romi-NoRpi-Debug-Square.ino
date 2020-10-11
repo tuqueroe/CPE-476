@@ -37,19 +37,19 @@ void loop() {
   
   //set motor speed to move robot forward for 2 seconds
   motors.setSpeeds(-100,-100);
-  delay(2000);
+  delay(500);
 
   //set motor speed to 0 to stop robot for 2 seconds
   motors.setSpeeds(0,0);
-  delay(2000);
+  delay(500);
 
   //wheels rotate to turn the robot
-  motors.setSpeeds(100,0);
-  delay(1250);  
+  motors.setSpeeds(200,-200);
+  delay(210);  
 
   //stop for 2 seconds before moving again
   motors.setSpeeds(0,0);
-  delay(2000);
+  delay(500);
       
   if (everyNmillisec(10)) {
     // ODOMETRY
